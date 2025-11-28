@@ -1,0 +1,113 @@
+/*
+  Copyright (c) 2025 Diksha Pal
+  All rights reserved.
+
+  Unauthorized copying, modification, or redistribution is prohibited.
+*/
+
+.app-container {
+  min-height: 100vh;
+  display: flex;
+}
+
+.app-container.light {
+  background: linear-gradient(135deg, #dfe9f3, #ffffff);
+  color: #000;
+}
+
+.app-container.dark {
+  background: #1A1A1A;
+  color: #E0E0E0;
+}
+
+.sidebar {
+  width: 280px;
+  padding: 16px;
+  border-left: 1px solid #ccc;
+  background: #ffffff;
+}
+
+.app-container.dark .sidebar {
+  background: #242424;
+  border-left: 1px solid #333;
+}
+
+.sidebar-title {
+  font-size: 1.3rem;
+  font-weight: 700;
+  margin-bottom: 14px;
+  background: linear-gradient(90deg, #1976d2, #512da8);
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+.sidebar-item {
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+
+.dark-item {
+  background: #1A1A1A;
+  color: white;
+}
+
+.light-item {
+  background: #f4f4f4;
+  color: black;
+}
+
+.main-area {
+  padding-top: 40px;
+  width: 100%;
+}
+
+.main-title {
+  font-size: 2.8rem;
+  text-align: center;
+  font-weight: 700;
+  margin-bottom: 30px;
+  background: linear-gradient(90deg, #1976d2, #512da8);
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+.main-card {
+  border-radius: 18px;
+  background: white;
+}
+
+.app-container.dark .main-card {
+  background: #242424;
+  color: white;
+}
+
+.tone-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.tone-btn {
+  text-transform: none;
+  border-radius: 50px;
+}
+
+.generate-btn {
+  padding: 14px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  background: linear-gradient(90deg, #1976d2, #512da8) !important;
+  margin-top: 30px;
+}cd
+
+.reply-box {
+  padding: 16px;
+  min-height: 180px;
+  border-radius: 12px;
+  background: #f7f7f7;
+  white-space: pre-wrap;
+}
+
+.app-container.dark .reply-box {
+  background: #1E1E1E;
+}
